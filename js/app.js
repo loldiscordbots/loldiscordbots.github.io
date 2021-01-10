@@ -1,4 +1,39 @@
-addClickEvents();
+loadBots();
+
+function loadBots() {
+  var data = loadText("https://raw.githubusercontent.com/loldiscordbots/loldiscordbots.github.io/main/bots.txt").then(function(data){
+    var lines = data.split('\n');
+	
+	var container = document.getElementsByClassName("champion_container")[0];
+	var template = document.getElementsByClassName("champion_card")[0];
+	
+	for(var i=0; i<lines.length; i++) {
+	  var line = lines[i];
+	  var attributes = line.split('|');
+	  
+	  if(attributes.length > 1) loadBot(attributes, container, template);
+	}
+	
+	addClickEvents();
+  });
+}
+
+function loadBot(attributes, container, template) {
+  var name = attributes[0];
+  var icon = "url('imgs/icons/champions/"+name.toLowerCase()+".png')";
+  var id = attributes[1];
+  var description = attributes[2];
+  
+  var card = template.cloneNode(true);
+  card.style = "";
+  
+  card.querySelector('div[class="champion_card_text"]').innerText = name;
+  card.querySelector('div[class="champion_card_icon"]').style.backgroundImage = icon;
+  card.querySelector('div[class="champion_card_description"]').innerText = description;
+  card.querySelector('div[class="champion_card_id"]').innerText = id;
+  
+  container.appendChild(card); 
+}
 
 function addClickEvents() {
   var container = document.getElementById("profile_container");
@@ -41,4 +76,22 @@ function openProfile(card) {
 
 function closeProfile(container) {
   container.style.display = "none";
+}
+
+function loadText(url) {
+    return new Promise(
+        function(resolve, reject) {
+            var request = new XMLHttpRequest();
+            request.open('GET', url, true);
+            request.send(null);
+
+            request.onreadystatechange = function() {
+                if (request.readyState === 4 && request.status === 200) {
+                    var type = request.getResponseHeader('Content-Type');
+                    if (type.indexOf("text") !== 1) {
+                        resolve(request.responseText);
+                    }
+                }
+            }
+        });
 }
