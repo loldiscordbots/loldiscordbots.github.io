@@ -4,7 +4,8 @@ function addClickEvents() {
   var container = document.getElementById("profile_container");
   container.onclick = function(e) {
 	if (e.target !== this) return;
-    container.style.display = "none";
+	
+	closeProfile(container);
   };
   
   var cards = document.getElementsByClassName("champion_card");
@@ -36,4 +37,8 @@ function openProfile(card) {
   container.querySelector('a[class="invite_button"]').href = "https://discord.com/oauth2/authorize?client_id="+id+"&scope=bot";
   
   container.style.display = "flex";
+}
+
+function closeProfile(container) {
+  container.style.display = "none";
 }
