@@ -22,9 +22,21 @@
     <link rel="stylesheet" href="css/app.css">
 	
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@500;600;800&display=swap" rel="stylesheet"> 
   </head>
   <body>
+	<div id="profile_container" style="display: none">
+	  <div class="profile">
+	    <div class="profile_header">
+		  <div class="profile_icon"></div>
+		  <span class="profile_name"></span>
+		  <a class="invite_button">Invite</a>
+		</div>
+		<div class="profile_title">DESCRIPTION</div>
+		<div class="profile_content"></div>
+	  </div>
+	</div>
+	
 	<div class="background_filter"></div>
 	<div class="background">
 	  <div class="background_image" style="background-image: url('imgs/background.jpg')"></div>
@@ -36,222 +48,22 @@
 	</div>
     
     <div class="champion_container">
+	  
 	  <div class="champion_card">
-	    <div class="champion_card_icon" style="background-image: url('imgs/icons/champions/ahri.png')"></div>
-	    <div class="champion_card_text">Ahri</div>
+	    <div class="champion_card_icon" style="background-image: url('imgs/icons/champions/aatrox.png')"></div>
+	    <div class="champion_card_text">Aatrox</div>
+		<div class="champion_card_description" style="display: none">Once honored defenders of Shurima against the Void, Aatrox and his brethren would eventually become an even greater threat to Runeterra, and were defeated only by cunning mortal sorcery. But after centuries of imprisonment, Aatrox was the first to find freedom once more, corrupting and transforming those foolish enough to try and wield the magical weapon that contained his essence. Now, with stolen flesh, he walks Runeterra in a brutal approximation of his previous form, seeking an apocalyptic and long overdue vengeance.</div>
+	    <div class="champion_card_id" style="display: none">797507257268043807</div>
 	  </div>
 	  <div class="champion_card">
 	    <div class="champion_card_icon" style="background-image: url('imgs/icons/champions/ahri.png')"></div>
 	    <div class="champion_card_text">Ahri</div>
+		<div class="champion_card_description" style="display: none">Innately connected to the latent power of Runeterra, Ahri is a vastaya who can reshape magic into orbs of raw energy. She revels in toying with her prey by manipulating their emotions before devouring their life essence. Despite her predatory nature, Ahri retains a sense of empathy as she receives flashes of memory from each soul she consumes.</div>
+		<div class="champion_card_id" style="display: none">797518844415180860</div>
 	  </div>
-	  <div class="champion_card">
-	    <div class="champion_card_icon" style="background-image: url('imgs/icons/champions/ahri.png')"></div>
-	    <div class="champion_card_text">Ahri</div>
-	  </div>
-	  <div class="champion_card">
-	    <div class="champion_card_icon" style="background-image: url('imgs/icons/champions/ahri.png')"></div>
-	    <div class="champion_card_text">Ahri</div>
-	  </div>
-	  <div class="champion_card">
-	    <div class="champion_card_icon" style="background-image: url('imgs/icons/champions/ahri.png')"></div>
-	    <div class="champion_card_text">Ahri</div>
-	  </div>
-	  <div class="champion_card">
-	    <div class="champion_card_icon" style="background-image: url('imgs/icons/champions/ahri.png')"></div>
-	    <div class="champion_card_text">Ahri</div>
-	  </div>
-	  <div class="champion_card">
-	    <div class="champion_card_icon" style="background-image: url('imgs/icons/champions/ahri.png')"></div>
-	    <div class="champion_card_text">Ahri</div>
-	  </div>
-	  <div class="champion_card">
-	    <div class="champion_card_icon" style="background-image: url('imgs/icons/champions/ahri.png')"></div>
-	    <div class="champion_card_text">Ahri</div>
-	  </div>
-	  <div class="champion_card">
-	    <div class="champion_card_icon" style="background-image: url('imgs/icons/champions/ahri.png')"></div>
-	    <div class="champion_card_text">Ahri</div>
-	  </div>
-	  <div class="champion_card">
-	    <div class="champion_card_icon" style="background-image: url('imgs/icons/champions/ahri.png')"></div>
-	    <div class="champion_card_text">Ahri</div>
-	  </div>
-	  <div class="champion_card">
-	    <div class="champion_card_icon" style="background-image: url('imgs/icons/champions/ahri.png')"></div>
-	    <div class="champion_card_text">Ahri</div>
-	  </div>
-	  <div class="champion_card">
-	    <div class="champion_card_icon" style="background-image: url('imgs/icons/champions/ahri.png')"></div>
-	    <div class="champion_card_text">Ahri</div>
-	  </div>
-	  <div class="champion_card">
-	    <div class="champion_card_icon" style="background-image: url('imgs/icons/champions/ahri.png')"></div>
-	    <div class="champion_card_text">Ahri</div>
-	  </div>
-	  <div class="champion_card">
-	    <div class="champion_card_icon" style="background-image: url('imgs/icons/champions/ahri.png')"></div>
-	    <div class="champion_card_text">Ahri</div>
-	  </div>
-	  <div class="champion_card">
-	    <div class="champion_card_icon" style="background-image: url('imgs/icons/champions/ahri.png')"></div>
-	    <div class="champion_card_text">Ahri</div>
-	  </div>
-	  <div class="champion_card">
-	    <div class="champion_card_icon" style="background-image: url('imgs/icons/champions/ahri.png')"></div>
-	    <div class="champion_card_text">Ahri</div>
-	  </div>
-	  <div class="champion_card">
-	    <div class="champion_card_icon" style="background-image: url('imgs/icons/champions/ahri.png')"></div>
-	    <div class="champion_card_text">Ahri</div>
-	  </div>
-	  <div class="champion_card">
-	    <div class="champion_card_icon" style="background-image: url('imgs/icons/champions/ahri.png')"></div>
-	    <div class="champion_card_text">Ahri</div>
-	  </div>
-	  <div class="champion_card">
-	    <div class="champion_card_icon" style="background-image: url('imgs/icons/champions/ahri.png')"></div>
-	    <div class="champion_card_text">Ahri</div>
-	  </div>
-	  <div class="champion_card">
-	    <div class="champion_card_icon" style="background-image: url('imgs/icons/champions/ahri.png')"></div>
-	    <div class="champion_card_text">Ahri</div>
-	  </div>
-	  <div class="champion_card">
-	    <div class="champion_card_icon" style="background-image: url('imgs/icons/champions/ahri.png')"></div>
-	    <div class="champion_card_text">Ahri</div>
-	  </div>
-	  <div class="champion_card">
-	    <div class="champion_card_icon" style="background-image: url('imgs/icons/champions/ahri.png')"></div>
-	    <div class="champion_card_text">Ahri</div>
-	  </div>
-	  <div class="champion_card">
-	    <div class="champion_card_icon" style="background-image: url('imgs/icons/champions/ahri.png')"></div>
-	    <div class="champion_card_text">Ahri</div>
-	  </div>
-	  <div class="champion_card">
-	    <div class="champion_card_icon" style="background-image: url('imgs/icons/champions/ahri.png')"></div>
-	    <div class="champion_card_text">Ahri</div>
-	  </div>
-	  <div class="champion_card">
-	    <div class="champion_card_icon" style="background-image: url('imgs/icons/champions/ahri.png')"></div>
-	    <div class="champion_card_text">Ahri</div>
-	  </div>
-	  <div class="champion_card">
-	    <div class="champion_card_icon" style="background-image: url('imgs/icons/champions/ahri.png')"></div>
-	    <div class="champion_card_text">Ahri</div>
-	  </div>
-	  <div class="champion_card">
-	    <div class="champion_card_icon" style="background-image: url('imgs/icons/champions/ahri.png')"></div>
-	    <div class="champion_card_text">Ahri</div>
-	  </div>
-	  <div class="champion_card">
-	    <div class="champion_card_icon" style="background-image: url('imgs/icons/champions/ahri.png')"></div>
-	    <div class="champion_card_text">Ahri</div>
-	  </div>
-	  <div class="champion_card">
-	    <div class="champion_card_icon" style="background-image: url('imgs/icons/champions/ahri.png')"></div>
-	    <div class="champion_card_text">Ahri</div>
-	  </div>
-	  <div class="champion_card">
-	    <div class="champion_card_icon" style="background-image: url('imgs/icons/champions/ahri.png')"></div>
-	    <div class="champion_card_text">Ahri</div>
-	  </div>
-	  <div class="champion_card">
-	    <div class="champion_card_icon" style="background-image: url('imgs/icons/champions/ahri.png')"></div>
-	    <div class="champion_card_text">Ahri</div>
-	  </div>
-	  <div class="champion_card">
-	    <div class="champion_card_icon" style="background-image: url('imgs/icons/champions/ahri.png')"></div>
-	    <div class="champion_card_text">Ahri</div>
-	  </div>
-	  <div class="champion_card">
-	    <div class="champion_card_icon" style="background-image: url('imgs/icons/champions/ahri.png')"></div>
-	    <div class="champion_card_text">Ahri</div>
-	  </div>
-	  <div class="champion_card">
-	    <div class="champion_card_icon" style="background-image: url('imgs/icons/champions/ahri.png')"></div>
-	    <div class="champion_card_text">Ahri</div>
-	  </div>
-	  <div class="champion_card">
-	    <div class="champion_card_icon" style="background-image: url('imgs/icons/champions/ahri.png')"></div>
-	    <div class="champion_card_text">Ahri</div>
-	  </div>
-	  <div class="champion_card">
-	    <div class="champion_card_icon" style="background-image: url('imgs/icons/champions/ahri.png')"></div>
-	    <div class="champion_card_text">Ahri</div>
-	  </div>
-	  <div class="champion_card">
-	    <div class="champion_card_icon" style="background-image: url('imgs/icons/champions/ahri.png')"></div>
-	    <div class="champion_card_text">Ahri</div>
-	  </div>
-	  <div class="champion_card">
-	    <div class="champion_card_icon" style="background-image: url('imgs/icons/champions/ahri.png')"></div>
-	    <div class="champion_card_text">Ahri</div>
-	  </div>
-	  <div class="champion_card">
-	    <div class="champion_card_icon" style="background-image: url('imgs/icons/champions/ahri.png')"></div>
-	    <div class="champion_card_text">Ahri</div>
-	  </div>
-	  <div class="champion_card">
-	    <div class="champion_card_icon" style="background-image: url('imgs/icons/champions/ahri.png')"></div>
-	    <div class="champion_card_text">Ahri</div>
-	  </div>
-	  <div class="champion_card">
-	    <div class="champion_card_icon" style="background-image: url('imgs/icons/champions/ahri.png')"></div>
-	    <div class="champion_card_text">Ahri</div>
-	  </div>
-	  <div class="champion_card">
-	    <div class="champion_card_icon" style="background-image: url('imgs/icons/champions/ahri.png')"></div>
-	    <div class="champion_card_text">Ahri</div>
-	  </div>
-	  <div class="champion_card">
-	    <div class="champion_card_icon" style="background-image: url('imgs/icons/champions/ahri.png')"></div>
-	    <div class="champion_card_text">Ahri</div>
-	  </div>
-	  <div class="champion_card">
-	    <div class="champion_card_icon" style="background-image: url('imgs/icons/champions/ahri.png')"></div>
-	    <div class="champion_card_text">Ahri</div>
-	  </div>
-	  <div class="champion_card">
-	    <div class="champion_card_icon" style="background-image: url('imgs/icons/champions/ahri.png')"></div>
-	    <div class="champion_card_text">Ahri</div>
-	  </div>
-	  <div class="champion_card">
-	    <div class="champion_card_icon" style="background-image: url('imgs/icons/champions/ahri.png')"></div>
-	    <div class="champion_card_text">Ahri</div>
-	  </div>
-	  <div class="champion_card">
-	    <div class="champion_card_icon" style="background-image: url('imgs/icons/champions/ahri.png')"></div>
-	    <div class="champion_card_text">Ahri</div>
-	  </div>
-	  <div class="champion_card">
-	    <div class="champion_card_icon" style="background-image: url('imgs/icons/champions/ahri.png')"></div>
-	    <div class="champion_card_text">Ahri</div>
-	  </div>
-	  <div class="champion_card">
-	    <div class="champion_card_icon" style="background-image: url('imgs/icons/champions/ahri.png')"></div>
-	    <div class="champion_card_text">Ahri</div>
-	  </div>
-	  <div class="champion_card">
-	    <div class="champion_card_icon" style="background-image: url('imgs/icons/champions/ahri.png')"></div>
-	    <div class="champion_card_text">Ahri</div>
-	  </div>
-	  <div class="champion_card">
-	    <div class="champion_card_icon" style="background-image: url('imgs/icons/champions/ahri.png')"></div>
-	    <div class="champion_card_text">Ahri</div>
-	  </div>
-	  <div class="champion_card">
-	    <div class="champion_card_icon" style="background-image: url('imgs/icons/champions/ahri.png')"></div>
-	    <div class="champion_card_text">Ahri</div>
-	  </div>
-	  <div class="champion_card">
-	    <div class="champion_card_icon" style="background-image: url('imgs/icons/champions/ahri.png')"></div>
-	    <div class="champion_card_text">Ahri</div>
-	  </div>
-	  <div class="champion_card">
-	    <div class="champion_card_icon" style="background-image: url('imgs/icons/champions/ahri.png')"></div>
-	    <div class="champion_card_text">Ahri</div>
-	  </div>
+	  
 	</div>
   </body>
+  
+  <script src="js/app.js"></script>
 </html>
