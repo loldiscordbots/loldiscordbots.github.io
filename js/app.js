@@ -21,7 +21,7 @@ function loadBots() {
 
 function loadBot(attributes, container, template) {
   var name = attributes[0];
-  var icon = "url('imgs/icons/champions/"+name.toLowerCase().replace(" ", "_")+".png')";
+  var icon = "url(\"imgs/icons/champions/"+name.toLowerCase().replace(" ", "_")+".png\")";
   var id = attributes[1];
   var description = attributes[2];
   
