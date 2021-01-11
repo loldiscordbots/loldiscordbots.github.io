@@ -15,6 +15,7 @@ function loadBots() {
 	}
 	
 	addClickEvents();
+	search(document.getElementsByClassName("header_searchbox")[0]);
   });
 }
 
@@ -76,6 +77,25 @@ function openProfile(card) {
 
 function closeProfile(container) {
   container.style.display = "none";
+}
+
+function search(e) {
+  var query = e.value.toLowerCase();
+  
+  var cards = document.getElementsByClassName("champion_card");
+  for(var i = 0; i < cards.length; i++) {
+	var card = cards.item(i);
+	
+	toggleVisibility(card, query);
+  }
+}
+
+function toggleVisibility(card, query) {
+  var name = card.querySelector('div[class="champion_card_text"]').innerText.toLowerCase();
+  if(name.length == 0) return;
+  
+  if(query.length == 0 || name.includes(query)) card.style = "";
+  else card.style = "display: none;";
 }
 
 function loadText(url) {

@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="css/app.css">
 	
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@500;600;800&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@400;500;600;800&display=swap" rel="stylesheet"> 
   </head>
   <body>
 	<div id="profile_container" style="display: none">
@@ -30,7 +30,7 @@
 	    <div class="profile_header">
 		  <div class="profile_icon"></div>
 		  <span class="profile_name"></span>
-		  <a class="invite_button">Invite</a>
+		  <a class="invite_button" target="_blank">Invite</a>
 		</div>
 		<div class="profile_title">DESCRIPTION</div>
 		<div class="profile_content"></div>
@@ -45,6 +45,7 @@
 	
     <div class="header">
 	  <div class="header_title">LOL DISCORD BOTS</div>
+	  <input class="header_searchbox" type="text" placeholder="Search..." onkeyup="search(this)"></input>
 	</div>
     
     <div class="champion_container">
