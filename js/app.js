@@ -15,7 +15,12 @@ function loadBots() {
 	}
 	
 	addClickEvents();
-	search(document.getElementsByClassName("header_searchbox")[0]);
+	
+	var searchParam = new URL(location).searchParams.get('search');
+	
+	var input = document.getElementsByClassName("header_searchbox")[0];
+	input.value = searchParam;
+	search(input);
   });
 }
 
@@ -80,7 +85,14 @@ function closeProfile(container) {
 }
 
 function search(e) {
-  var query = e.value.toLowerCase();
+  var query = e.value;
+  
+  const url = new URL(location);
+  if(query.length != 0) url.searchParams.set('search', query);
+  else url.searchParams.delete('search');
+  history.replaceState(null, null, url);
+  
+  query = query.toLowerCase();
   
   var cards = document.getElementsByClassName("champion_card");
   for(var i = 0; i < cards.length; i++) {
