@@ -28,6 +28,11 @@ Evelynn|0|Desc.
 Ezreal|0|Desc.
 Fiddlesticks|0|Desc.
 Fiora|0|Desc.
+Fizz|0|Desc.
+Galio|0|Desc.
+Gangplank|0|Desc.
+Garen|0|Desc.
+Gnar|0|Desc.
 Gragas|0|Desc.
 Graves|0|Desc.
 Hecarim|0|Desc.
