@@ -1,3 +1,12 @@
+parseUrl();
+
+function parseUrl() {
+  var searchParam = new URL(location).searchParams.get('search');
+  
+  var input = document.getElementsByClassName("header_searchbox")[0];
+  input.value = searchParam;
+}
+
 loadBots();
 
 function loadBots() {
@@ -19,7 +28,6 @@ function loadBots() {
 	var searchParam = new URL(location).searchParams.get('search');
 	
 	var input = document.getElementsByClassName("header_searchbox")[0];
-	input.value = searchParam;
 	search(input);
   });
 }
